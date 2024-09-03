@@ -1,23 +1,54 @@
+/* Apply a background image to the body */
 body {
+  background-image: url("./images/weather_0.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
-  /* display: flex; */
-  display: grid;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-}
-button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
-button:hover {
+/* Styling the headings */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Styling the paragraph text */
+p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: midnightblue;
+}
+
+/* Styling the span elements for weather information */
+.temp-value,
+.point,
+.des {
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+}
+
+/* Styling the button */
+#fetch-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+#fetch-btn:hover {
   background-color: #0056b3;
 }
